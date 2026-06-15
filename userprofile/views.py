@@ -13,7 +13,7 @@ def userprofile_view(request):
     return HttpResponse("<h1>User profile</h1")
 
 @csrf_exempt
-def register(request):
+def userprofile_register(request):
     if request.method == 'POST':
         # 1. transforma o JSON do bruno em um adicionario python
         data = json.loads(request.body)
